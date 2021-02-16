@@ -1,11 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using SwaggerApiNetCore31.ViewModels;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net;
+using System.Threading.Tasks;
 
-namespace SwaggerApiNetCore31.Controllers
+
+namespace API2.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
