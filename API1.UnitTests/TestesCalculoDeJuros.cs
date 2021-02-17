@@ -1,5 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using API1.Controllers;
+using Microsoft.AspNetCore.Mvc;
 
 namespace API1.Test
 {
@@ -10,14 +11,20 @@ namespace API1.Test
         public void TesteRetornaCalculoJuros()
         {
             calculajurosController calculajuros = new calculajurosController();
-            calculajuros.Get(100, 50);
+
+            IActionResult valor = calculajuros.Get(100, 5);
+            var juros = (OkObjectResult)valor;
+            Assert.AreEqual("105,1", juros.Value.ToString());
         }
 
         [TestMethod]
         public void TesteRetornaTaxaJuros()
         {
             taxajurosController taxajuros = new taxajurosController();
-            taxajuros.Get();
+
+            IActionResult juros = taxajuros.Get();
+            var valor = (OkObjectResult)juros;
+            Assert.AreEqual("0,01", valor.Value.ToString());
         }
     }
 }

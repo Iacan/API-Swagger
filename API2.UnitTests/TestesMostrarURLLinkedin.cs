@@ -7,7 +7,7 @@ namespace API2.Test
     public class TestesMostrarURLLinkedin
     {
         [TestMethod]
-        public void TesteRetornaURLLinkedin()
+        public void TesteRetornoURLLinkedin()
         {
             showmethecode retornaLinkedin = new showmethecode();
             retornaLinkedin.Get();
