@@ -25,9 +25,18 @@ namespace API1.Controllers
             return Ok(valor);
         }
 
+        /// <summary>
+        /// Realiza o Calculo do Juros, Dado um Valor Inicial e Temp. 
+        /// </summary>
+        /// <param name="valorinicial"></param>
+        /// <param name="meses"></param>
+        /// <returns></returns>
         private double CalculaJuros(double valorinicial, int meses)
         {
-            double valorFinal = Math.Round(valorinicial * Math.Pow(1 + 0.01,meses), 2);
+            taxajurosController RecuperaTaxaDeJuros = new taxajurosController();
+            var taxaDeJuros = RecuperaTaxaDeJuros.Get() as OkObjectResult;
+            
+            double valorFinal = Math.Round(valorinicial * Math.Pow(1 + Convert.ToDouble(taxaDeJuros.Value), meses), 2);
             return valorFinal;
         }
     }

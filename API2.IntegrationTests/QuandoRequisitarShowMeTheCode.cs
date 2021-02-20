@@ -3,16 +3,16 @@ using System.Net;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace API1IntegrationTest
+namespace API2.IntegrationTests
 {
-    public class TestesCalculaJuros
+    public class QuandoRequisitarShowMeTheCode
     {
         [Fact]
-        public async Task TesteRetornoCalculoDeJuros()
+        public async Task E_Possivel_Consultar_URL_Do_Linkedin()
         {
             var client = new TestClientProvider().Client;
 
-            var response = await client.GetAsync("/api/calculajuros");
+            var response = await client.GetAsync("/api/showmethecode");
 
             response.EnsureSuccessStatusCode();
 

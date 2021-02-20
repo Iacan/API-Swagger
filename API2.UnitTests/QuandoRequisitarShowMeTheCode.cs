@@ -4,10 +4,10 @@ using API2.Controllers;
 namespace API2.Test
 {
     [TestClass]
-    public class TestesMostrarURLLinkedin
+    public class QuandoRequisitarShowMeTheCode
     {
         [TestMethod]
-        public void TesteRetornoURLLinkedin()
+        public void E_Possivel_Consultar_URL_Do_Linkedin()
         {
             showmethecode retornaLinkedin = new showmethecode();
             retornaLinkedin.Get();
