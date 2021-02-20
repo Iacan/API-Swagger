@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  api2:
+    image: 154515/api2
+    build:
+      context: ./API2
+      dockerfile: Dockerfile
+
+  api1:
+    image: 154515/api1
+    build:
+      context: ./API1
+      dockerfile: Dockerfile
+
