@@ -28,7 +28,7 @@ namespace API2.Controllers
 
         private string RetornaLinkMeuGit()
         {
-            return "Meu Link do Git";
+            return "https://github.com/Iacan/API-Swagger";
 ;        }
     }
 }
