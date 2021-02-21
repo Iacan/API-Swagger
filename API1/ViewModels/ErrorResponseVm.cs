@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace SwaggerApiNetCore31.ViewModels
+namespace API1.ViewModels
 {
     public class ErrorResponseVm
     {

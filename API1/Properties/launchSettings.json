@@ -15,7 +15,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "SwaggerApiNetCore31": {
+    "API1": {
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {
