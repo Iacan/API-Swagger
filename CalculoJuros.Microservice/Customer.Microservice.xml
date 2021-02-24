@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CalculoDeJuros.Microservice</name>
+    </assembly>
+    <members>
+        <member name="M:Customer.Microservice.Controllers.CalculoJurosController.Get(System.Double,System.Int32)">
+            <summary>
+            Efetuar calculo de juros.
+            </summary>
+            <response code="200">Calculo de juros obtido com sucesso.</response>
+            <response code="500">Ocorreu um erro ao obter o calculo de juros.</response>
+        </member>
+        <member name="M:Customer.Microservice.Controllers.CalculoJurosController.CalculaJuros(System.Double,System.Int32)">
+            <summary>
+            Realiza o Calculo do Juros, Dado um Valor Inicial e Temp. 
+            </summary>
+            <param name="valorinicial"></param>
+            <param name="meses"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Customer.Microservice.Controllers.TaxaJurosController.Get">
+            <summary>
+            Obter Taxa de Juros
+            </summary>
+            <response code="200">Taxa de juros obtida com sucesso.</response>
+            <response code="500">Ocorreu um erro ao obter a taxa de juros.</response>
+        </member>
+    </members>
+</doc>

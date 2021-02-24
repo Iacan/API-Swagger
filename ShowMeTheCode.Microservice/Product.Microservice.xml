@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ShowMeTheCode.Microservice</name>
+    </assembly>
+    <members>
+        <member name="M:ShowMeTheCode.Microservice.Controllers.ShowMeTheCodeController.Get">
+            <summary>
+            Obter Link do Linkedin.
+            </summary>
+            <response code="200">A lista de usuários foi obtida com sucesso.</response>
+            <response code="500">Ocorreu um erro ao obter a lista de usuários.</response>
+        </member>
+    </members>
+</doc>
